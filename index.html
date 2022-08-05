@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='https://fonts.googleapis.com/css?family=RobotoDraft' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+html,body,h1,h2,h3,h4,h5 {font-family: "RobotoDraft", "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {padding: 16px}
+</style>
+</head>
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-white w3-animate-left w3-card" style="z-index:3;width:320px;" id="mySidebar">
+  
+  <a href="javascript:void(0)" onclick="w3_close()" title="Close Sidemenu" 
+  class="w3-bar-item w3-button w3-hide-large w3-large">Fechar   <i class="fa fa-remove"></i></a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-dark-grey w3-button w3-hover-black w3-left-align" onclick="document.getElementById('id01').style.display='block'">My Contact</a>
+  <a id="myBtn" onclick="myFunc('Demo1')" href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-inbox w3-margin-right"></i>Curriculum<i class="fa fa-caret-down w3-margin-left"></i></a>
+  <div id="Demo1" class="w3-hide w3-animate-left">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Borge');w3_close();" id="firstTab">
+      <div class="w3-container">
+       <span class="w3-opacity w3-large">Emerson Rodrigues</span>
+        <h6>About me</h6>
+        <p>Hello, It will be a pleasure to tell you about me...</p>
+      </div>
+    </a>
+     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-border-bottom test w3-hover-light-grey" onclick="openMail('Jane');w3_close();">
+      <div class="w3-container">
+        <span class="w3-opacity w3-large">Professional Experience</span>
+        <p>Hi, Hello, It is a pleasure to tell you about my experience in the job market.</p>
+      </div>
+    </a>
+  
+  </div>
+ </nav>
+
+<!-- Modal that pops up when you click on "New Message" -->
+<div id="id01" class="w3-modal" style="z-index:4">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-padding w3-red">
+       <span onclick="document.getElementById('id01').style.display='none'"
+       class="w3-button w3-red w3-right w3-xxlarge"><i class="fa fa-remove"></i></span>
+      <h2>My Contact</h2>
+    </div>
+    <div class="w3-panel">
+      <h5>Telefone: (31) 9 9840-2112</h5>
+      <h5>E-mail: emerson.erg99@gmail.com</h5>
+      <a>Linkedin: https://www.linkedin.com/in/emerson-rodrigues-38a137143/</a>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Overlay effect when opening the side navigation on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="Close Sidemenu" id="myOverlay"></div>
+
+<!-- Page content -->
+<div class="w3-main" style="margin-left:320px;">
+<i class="fa fa-bars w3-button w3-white w3-hide-large w3-xlarge w3-margin-left w3-margin-top" onclick="w3_open()"></i>
+
+<div id="Borge" class="w3-container person">
+  <br>
+  <img class="w3-round  w3-animate-top" src="foto.jpeg" style="width:13%;">
+  <h5 class="w3-opacity">Emerson Rodrigues Gonçalves</h5>
+  <h4><i></i>About </h4>
+  <h4><i></i> Age: 23 years old, City: Belo Horizonte.</h4><br>
+  <a class="w3-button w3-light-grey" href="#" onclick="openMail('Jane');">Experience<i class="w3-margin-left fa fa-arrow-right"></i></a>
+  <hr>
+  <p>Hello, I'm a professional who has been working with software quality since 2020. And I'm passionate about the quality area and its contribution to the technological world.</p>
+  <p>I'm studying Technologist in Systems Analysis and Development, and I aim to learn the best test automation practices that exist in the market. In addition, I am a dedicated and committed professional, I always try to offer the best of myself, I carry out my work with pride and pleasure, doing what I like best.
+    I love to make new friends, I like to practice sports and have a healthy life.</p>
+  
+</div>
+
+<div id="Jane" class="w3-container person">
+  <br>
+  <img class="w3-round w3-animate-top" src="foto.jpeg" style="width:13%;">
+  <h5 class="w3-opacity">Emerson Rodrigues Gonçalves</h5>
+  <h4><i></i>Experience</h4><br>
+  <a class="w3-button w3-light-grey" onclick="openMail('Borge');">about<i class="w3-margin-left fa fa-mail-reply"></i></a>
+  <hr>
+  <p>Experience with agile methodologies. Participation in the quality process from the software conception.
+    Experience in the banking sector. Participation in new product projects. Participation in production support projects. Participation in projects with waterfall and agile methodology (scrum and kanban).</p>
+   <p>Experience in planning and executing test cases. Mapping, planning, prioritizing and documenting test cases to be automated. Experience in test process consultancies and test automation consultancies.</p>  
+    <p> Test automation training.  Experience with WEB, API, Mobile and Desktop test automation. .Net, Java, Python and JavaScript languages. Continuous integration of tests in pipelines.</p>
+    <p>
+    Performance testing studies.
+    
+    Languages: .Net, Java, Python, JavaScript.
+    Frameworks: Selenium, Junit, Nunit, TestNG, RestAssured, Cucumber, Serenity, Appium, Cypress.
+    Tools: TestComplete, Git, Postman, Jmeter, Jenkins, Azure Devops, GitLab CI.</p>
+</div>
+
+
+
+
+     
+</div>
+
+<script>
+var openInbox = document.getElementById("myBtn");
+openInbox.click();
+
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function myFunc(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show"; 
+    x.previousElementSibling.className += " w3-red";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-red", "");
+  }
+}
+
+openMail("Borge")
+function openMail(personName) {
+  var i;
+  var x = document.getElementsByClassName("person");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x = document.getElementsByClassName("test");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" w3-light-grey", "");
+  }
+  document.getElementById(personName).style.display = "block";
+  event.currentTarget.className += " w3-light-grey";
+}
+</script>
+
+<script>
+var openTab = document.getElementById("firstTab");
+openTab.click();
+</script>
+
+</body>
+</html> 
